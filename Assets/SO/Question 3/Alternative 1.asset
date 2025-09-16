@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5b87c8b6289b8345923b1a6b3237b47, type: 3}
-  m_Name: Question 1
+  m_Script: {fileID: 11500000, guid: c9eec922891da40489071246812dfb07, type: 3}
+  m_Name: Alternative 1
   m_EditorClassIdentifier: 
-  questionText: Sideral fue el culpable del atentado?
-  answers: 0100000000000000
+  id: 0
+  text: si
