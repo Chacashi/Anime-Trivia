@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1087aadf3c5824bb7a66d9b7980b03, type: 3}
   m_Name: PanelQuestion
   m_EditorClassIdentifier: 
-  image: {fileID: 4120562420549246273, guid: f96aece86c28b4845b4bcaebd8dcd39c, type: 3}
-  audioClip: {fileID: 0}
+  image: {fileID: -5766372318151433808, guid: 30e842c622892d04b9691baf6f434059, type: 3}
+  audioClip: {fileID: 8300000, guid: f15825715430cef418961314dd15f512, type: 3}
   question: {fileID: 11400000, guid: 3c474eebb47117349b2034c08fbd1f0f, type: 2}

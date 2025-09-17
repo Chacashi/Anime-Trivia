@@ -12,7 +12,6 @@ public class DoScale : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
     public void OnPointerEnter(PointerEventData eventData)
     {
 
-        AudioManager.Instance.PlaySFX(0);
         ScaleTransform(doScale);
     }
 

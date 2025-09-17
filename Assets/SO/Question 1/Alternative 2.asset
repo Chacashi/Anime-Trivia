@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9eec922891da40489071246812dfb07, type: 3}
   m_Name: Alternative 2
   m_EditorClassIdentifier: 
-  id: 1
-  text: POPPIPIPP
+  id: 0
+  text: El te

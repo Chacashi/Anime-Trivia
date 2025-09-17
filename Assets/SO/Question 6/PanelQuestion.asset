@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1087aadf3c5824bb7a66d9b7980b03, type: 3}
+  m_Name: PanelQuestion
+  m_EditorClassIdentifier: 
+  image: {fileID: 4687185933313004367, guid: 1edf442896dee0c46acbc84f2564184e, type: 3}
+  audioClip: {fileID: 8300000, guid: 4d44cc4fc6df66a42925c81419accafd, type: 3}
+  question: {fileID: 11400000, guid: 61a9e3c1a96a13641a187f9c9e26516a, type: 2}

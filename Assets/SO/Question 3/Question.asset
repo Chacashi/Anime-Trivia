@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b87c8b6289b8345923b1a6b3237b47, type: 3}
   m_Name: Question
   m_EditorClassIdentifier: 
-  questionText: allo chupetin?
+  questionText: "\xBFPor qu\xE9 Luffy dice que no quiere ser un h\xE9roe? "
   anwers:
-  - {fileID: 11400000, guid: ccd0d56ad958acf49be7d9a3805873f3, type: 2}
-  - {fileID: 11400000, guid: edd20cef586ba8e49925bc6f50e9f82a, type: 2}
+  - {fileID: 11400000, guid: 66410f27510ee2c47861a6742fd3e276, type: 2}
+  - {fileID: 11400000, guid: 5c91e01f44b420d4ebaeb96b0f06b2dc, type: 2}

@@ -22,7 +22,7 @@ public class ResultsUI : MonoBehaviour
     void GetResults(int points)
     {
         resultsUI.SetActive(true);
-
+        AudioManager.Instance.playAudio(3);
         if (points == 10)
         {
             for (int i = 0; i < stairs.Length; i++)

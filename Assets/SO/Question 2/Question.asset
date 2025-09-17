@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b87c8b6289b8345923b1a6b3237b47, type: 3}
   m_Name: Question
   m_EditorClassIdentifier: 
-  questionText: Erer o no eres?
+  questionText: "\xBFCu\xE1l es la bebida preferida de Okabe Rintarou en Steins Gate?"
   anwers:
   - {fileID: 11400000, guid: 9e96288d97847a44fb449acca17ffcbf, type: 2}
   - {fileID: 11400000, guid: bb15481bd10c1fa41aeae799ff5f0a55, type: 2}

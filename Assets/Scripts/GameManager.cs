@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Image imageQuestion;
     [SerializeField] private TMP_Text textQuestion;
     [SerializeField] private int currentQuestionIndex = 0;
+    [SerializeField] private Image blockImage;
 
     public static event Action OnGameEnd;
     public static event Action OnSetDataOfQuestion;
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour
     {
         textQuestion.text = arrayPanelQuestions[index].question.questionText;
         imageQuestion.sprite = arrayPanelQuestions[index].image;
-
+        AudioManager.Instance.playAudio(arrayPanelQuestions[index].audioClip);
         trueBt.GetComponent<Alternative>().alternativeData = arrayPanelQuestions[index].question.anwers[0];
         falseBt.GetComponent<Alternative>().alternativeData = arrayPanelQuestions[index].question.anwers[1];
         OnSetDataOfQuestion?.Invoke();
@@ -45,11 +47,38 @@ public class GameManager : MonoBehaviour
     {
         currentQuestionIndex++;
         if (currentQuestionIndex < arrayPanelQuestions.Length)
-            SetQuestion(currentQuestionIndex);
+            StartCoroutine(WaitAndNext());
         else
-            OnGameEnd?.Invoke();
+            StartCoroutine(WaitAndResults());
+
     }
 
+
+    IEnumerator WaitAndNext()
+    {
+        blockImage.raycastTarget= true;
+        if(trueBt.GetComponent<Alternative>().ID ==1)
+            falseBt.interactable= false;
+        else
+            trueBt.interactable= false;
+
+        yield return new WaitForSeconds(2f);
+        SetQuestion(currentQuestionIndex);
+        blockImage.raycastTarget= false;
+        trueBt.interactable= true;
+        falseBt.interactable= true;
+    }
+
+    IEnumerator WaitAndResults()
+    {
+        if (trueBt.GetComponent<Alternative>().ID == 1)
+            falseBt.interactable = false;
+        else
+            trueBt.interactable = false;
+        blockImage.raycastTarget = true;
+        yield return new WaitForSeconds(2f);
+        OnGameEnd?.Invoke();
+    }
 
     public void RestartGame()
     {

@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    private void Start()
+    {
+        AudioManager.Instance.playAudio(4);
+    }
     public void ChangueScene(string newScene)
     {
         SceneManager.LoadScene(newScene);

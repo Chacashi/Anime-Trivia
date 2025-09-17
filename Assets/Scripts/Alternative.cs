@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class Alternative : MonoBehaviour
     public AlternativeData alternativeData { get;set; }
     public static event Action OnCorrectAnswerChoose;
     public static event Action OnChooseAnswer;
+
+    public int ID => id;
    
 
 
@@ -33,10 +36,15 @@ public class Alternative : MonoBehaviour
 
     void CheckID()
     {
-        AudioManager.Instance.PlaySFX(0);
         if (id == 1)
+        {
             OnCorrectAnswerChoose?.Invoke();
-        OnChooseAnswer?.Invoke();  
+            AudioManager.Instance.PlaySFX(1);
+        }
+        else
+            AudioManager.Instance.PlaySFX(2);
+
+        OnChooseAnswer?.Invoke();
 
     }
 
@@ -46,5 +54,7 @@ public class Alternative : MonoBehaviour
         text = alternativeData.text;
       
     }
+
+
 
 }

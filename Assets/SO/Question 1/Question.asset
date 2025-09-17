@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b87c8b6289b8345923b1a6b3237b47, type: 3}
   m_Name: Question
   m_EditorClassIdentifier: 
-  questionText: Sideral fue el culpable del atentado?
+  questionText: "\xBFCu\xE1l es el \xFAnico alimento humano que pueden consumir los
+    ghouls sin problemas?"
   anwers:
   - {fileID: 11400000, guid: ccd0d56ad958acf49be7d9a3805873f3, type: 2}
   - {fileID: 11400000, guid: edd20cef586ba8e49925bc6f50e9f82a, type: 2}
