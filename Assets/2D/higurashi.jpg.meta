@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      higurashi_0: -296702665832238020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
