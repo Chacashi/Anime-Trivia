@@ -97,4 +97,8 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void ChangueEscena(string nombreEscena)
+    {
+        SceneManager.LoadScene(nombreEscena);
+    }
 }
